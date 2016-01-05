@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+	<!-- Important Owl stylesheet -->
+	<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+	<!-- Default Theme -->
+	<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+	<!-- Include js plugin -->
+	<script src="owl-carousel/owl.carousel.js"></script>
+</head>
+	<body>
+		<div class="top-bumper">
+		</div>
+		<div class="content">
+			<div class="container">
+				<div class="row logo-row">
+					<div class="col-md-4 col-sm-4 col-xs-12 ">
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12 ">
+						<img src="images/sweetlogo.png" height="300px" width="auto">
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12 contact">
+						<ul class="media"> <!-- social media buttons -->
+							<li><a href="#"><img src="images/facebookpink.png" alt="facebook" height="40" width="auto"></a></li>
+							<li><a href="#"><img src="images/pinterestpink.png" alt="facebook" height="40" width="auto"></a></li>
+							<li><a href="#"><img src="images/instagrampink.png" alt="facebook" height="40" width="auto"></a></li>
+							<li><a href="#"><img src="images/tumblrpink.png" alt="facebook" height="40" width="auto"></a></li>
+						</ul>
+						<ul class="menu-contact">
+							<a href"#"><li id="phone">770.555.1234</li></a>
+							<a href"#"><li id="newsletter">Newsletter</li></a>
+						</ul>
+					</div>
+				</div>
+				<div class="row nav-bar"> <!-- main menu/nav bar -->
+					<div class="col-md-12">
+						<ul>
+							<li id="list-border"><a href="#">Home</a></li>
+							<li id="list-border"><a href="#">Orders</a></li>
+							<li id="list-border"><a href="#">Menu</a></li>
+							<li id="list-border"><a href="#">Locations</a></li>
+							<li id="list-border"><a href="#">About</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container hero"> <!-- center carousel -->
+			<div id="owl-demo" class="owl-carousel owl-theme">
+				<div class="item"><img src="images/cake2.jpg" alt="cupcakes"></div>
+				<div class="item"><img src="images/cake4.jpg" alt="our menu"></div>
+				<div class="item"><img src="images/cake3.jpg" alt="free shipping"></div>
+			</div>
+		</div>
+		<div class="container main">
+			<div class="row main-quote"><!-- quote under carousel -->
+				<div class="col-md-12">
+					<h1>The best things in life are sweet.</h1>
+				</div>
+			</div>
+			<div class="row main-middle"> <!-- first row of images/buttons -->
+				<div class="col-md-6 col-sm-6 main-middle-left">
+					<a href="#"><img src="images/story.jpg" alt="our story" height="auto" width="100%" class="main-thumbs"></a>
+				</div>
+				<div class="col-md-6 col-sm-6 main-middle-right">
+					<a href="#"><img src="images/menu.jpg" alt="dessert menu"  height="auto" width="100%" class="main-thumbs"></a>
+				</div>
+			</div>
+			<div class="row main-lower"> <!-- second row of images/buttons -->
+				<div class="col-md-4 col-sm-4 main-lower-left">
+					<a href="#"><img src="images/customorder.jpg" alt="custom order"  height="auto" width="100%" class="main-thumbs"></a>
+				</div>
+				<div class="col-md-4 col-sm-4 main-lower-middle">
+					<a href="#"><img src="images/wedding.jpg" alt="wedding"  height="auto" width="100%" class="main-thumbs"></a>
+				</div>
+				<div class="col-md-4 col-sm-4 main-lower-right">
+					<a href="#"><img src="images/blog.jpg" alt="blog"  height="auto" width="100%" class="main-thumbs"></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer"> <!-- footer menu -->
+			<div class="container">
+				<div class="row footer-nav-bar"><!-- disapears in mobile -->
+					<div class="col-md-12">
+						<ul id="footer-nav-list">
+							<li id="list-border"><a href="#">Locations</a></li>
+							<li id="list-border"><a href="#">Blog</a></li>
+							<li id="list-border"><a href="#">FAQ</a></li>
+							<li id="list-border"><a href="#">About</a></li>
+							<li id="list-border"><a href="#">Contact</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="bottom-bumper"> <!-- only appears on mobile -->
+		</div>
+	<script>
+		// Carousel
+		$(document).ready(function() {
+		  $("#owl-demo").owlCarousel({
+		      navigation : false, // Show next and prev buttons
+		      slideSpeed : 300,
+		      paginationSpeed : 500,
+		      singleItem:true,
+		      autoPlay:5000
+		  });
+		// main image board hover animation
+		$(".main-thumbs").hover(function () {
+		    $(this).fadeTo("slow", 0.33);
+			},
+			function(){
+				$(this).fadeTo("fast", 1);
+				});
+			});
+	</script>
+</body>
+</html>
